@@ -1,0 +1,27 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>push</h1>
+
+        <a id="btn">
+            click here
+         </button>
+
+
+    <script>
+        console.log(window.Notification);
+          if (!("Notification" in window)) {
+            // Check if the browser supports notifications
+            console.log("This browser does not support desktop notification");
+        }
+        btn.addEventListener('click', () => {
+            console.log("hello");
+            let promise = Notification.requestPermission();
+            console.log(promise);
+            // wait for permission
+          })
+    </script>
+    </body>
+</html>
