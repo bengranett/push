@@ -20,8 +20,7 @@
             console.log("hello");
             let promise = Notification.requestPermission();
             console.log(promise);
-            Notification("Ciao!");
-            // wait for permission
+            const notification = new Notification("ciao");
           })
     </script>
     </body>
